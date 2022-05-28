@@ -1,0 +1,129 @@
+body{
+  /*background-color: #0d1121;*/
+  background-color: #151922;
+  color: white;
+  font-family: 'Jost', sans-serif;
+  margin: 50px;
+}
+
+div{
+  cursor:pointer;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+  color: white;
+}
+
+h1{
+  font-size: 30px;
+}
+
+.title{
+  margin-top: -18px;
+  font-size: 18px;
+}
+
+.inline-block{
+  padding-top: 5px;
+}
+
+.icon{
+
+}
+
+.phone{
+  height: 50px;
+  width: 50px;
+}
+
+.email{
+  height: 50px;
+  width: 50px;
+}
+
+.linkedin{
+  height: 50px;
+  width: 50px;
+}
+
+.web{
+  height: 50px;
+  width: 50px;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+a:hover{
+  filter: contrast(50%);
+  -webkit-filter: contrast(50%);
+}
+
+.link{
+color: white;
+}
+
+.inline-block{
+   display: inline-block;
+   margin-top: -1px;
+}
+
+.icon:hover{
+  filter: contrast(50%);
+  -webkit-filter: contrast(50%);
+}
+
+/*landing page*/
+
+/*Maybe remove this
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*/
+
+.preload{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: #151922;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.5s ease;
+}
+
+.airplane{
+  height: 200px;
+  animation: airplane 1s ease infinite alternate;
+}
+
+.preload h3{
+  position: absolute;
+  top: 75%;
+  transform: translateY(-75%);
+  color: white;
+  font-size: 40px;
+  font-family: 'Jost', sans-serif;
+  font-weight: 400;
+}
+
+.preload-finish{
+  opacity: 0;
+  pointer-events: none;
+}
+
+@keyframes airplane{
+  from{
+    transform: translateY(0px);
+  }
+  to{
+    transform: translateY(50px);
+  }
+}
