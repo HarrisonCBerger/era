@@ -6,8 +6,20 @@ body{
   margin: 50px;
 }
 
+/* For scaling animation 
 div{
   cursor:pointer;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: .5rem;
+  animation: scaling 2.5s ease-in-out infinite;
+}
+*/
+
+section{
+  cursor: pointer;
 }
 
 img{
@@ -75,14 +87,6 @@ color: white;
 
 /*landing page*/
 
-/*Maybe remove this
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-*/
-
 .preload{
   position: fixed;
   top: 0;
@@ -90,24 +94,26 @@ color: white;
   height: 100vh;
   background: #151922;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
   transition: opacity 0.5s ease;
+  margin-top: 50px;
 }
 
 .airplane{
   height: 200px;
-  animation: airplane 1s ease infinite alternate;
+  animation: airplane 1s ease-in-out infinite alternate;
 }
 
 .preload h3{
   position: absolute;
-  top: 75%;
+  top: 60%;
   transform: translateY(-75%);
   color: white;
-  font-size: 40px;
+  font-size: 30px;
   font-family: 'Jost', sans-serif;
   font-weight: 400;
+  padding-top: -100px;
 }
 
 .preload-finish{
@@ -123,3 +129,34 @@ color: white;
     transform: translateY(50px);
   }
 }
+
+
+/* For scaling animation 
+
+@keyframes scaling{
+  0%, 100%{
+    transform: scale(0.2);
+    background-color: white;
+  }
+  40%{
+    transform: scale(1);
+    background-color: gray;
+  }
+  50%{
+    transform: scale(1);
+    background-color: darkgray;
+  }
+}
+
+div:nth-child(0){
+  animation-delay: 0s;
+}
+
+div:nth-child(1){
+  animation-delay: 0.2s;
+}
+
+div:nth-child(2){
+  animation-delay: 0.4s;
+}
+*/
