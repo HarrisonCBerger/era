@@ -1,13 +1,27 @@
+ #header{
+    min-height: 100px;
+  }
+
+#body{
+  min-height: 400px;
+  margin-top: 3%;
+}
+
 body{
+  min-height: 400px;
   /*background-color: #0d1121;*/
   background-color: #151922;
   color: white;
   font-family: 'Jost', sans-serif;
   margin: 50px;
-}
+ }
 
 div{
   cursor:pointer;
+}
+
+.banner{
+  display: inline-block;
 }
 
 /*Dots
@@ -152,4 +166,32 @@ color: white;
   to{
     transform: translateY(50px);
   }
+}
+
+/* Normal desktop :1200px. */
+@media (min-width: 1200px) and (max-width: 1500px) {
+
+/*     put your css */
+}
+
+
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+
+  /*     put your css */
+}
+
+ 
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+
+  /*     put your css */
+}
+
+ 
+/* small mobile :320px. */
+@media (max-width: 767px) {
+
+ /*     put your css */
+  
 }

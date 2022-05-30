@@ -3,6 +3,7 @@
 
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="wdith=device-width, intital-scale=1"/>
  <link rel="icon" type="image/x-icon" href="img/ps-logo.png">
 <link rel="stylesheet" type="text/css" href="style.css">
 <!-- Font -->
@@ -10,6 +11,177 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
 <title>Erjana Radomi</title>
+<style type="text/css">
+	 #header{
+    min-height: 100px;
+  }
+
+#body{
+  min-height: 400px;
+  margin-top: 3%;
+}
+
+body{
+  min-height: 400px;
+  /*background-color: #0d1121;*/
+  background-color: #151922;
+  color: white;
+  font-family: 'Jost', sans-serif;
+  margin: 50px;
+ }
+
+div{
+  cursor:pointer;
+}
+
+.banner{
+  display: inline-block;
+}
+
+/*Dots
+.loading span{
+  width: 25px;
+  height: 25px;
+  margin: 0 5px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  animation-name: dots;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out; 
+}
+
+.loading span:nth-child(2){
+  background-color: lightgray;
+  animation-delay: 0.4s;
+}
+
+.loading span:nth-child(3){
+  background-color: gray;
+  animation-delay: 0.8s;
+}
+
+@keyframes dots{
+  50%{
+    opacity: 0;
+    transform: scale(0.7) translateY(10px);
+  }
+}
+*/
+
+section{
+  cursor: pointer;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+  color: white;
+}
+
+h1{
+  font-size: 30px;
+}
+
+.title{
+  margin-top: -18px;
+  font-size: 18px;
+}
+
+.inline-block{
+  padding-top: 5px;
+}
+
+.phone{
+  height: 50px;
+  width: 50px;
+}
+
+.email{
+  height: 50px;
+  width: 50px;
+}
+
+.linkedin{
+  height: 50px;
+  width: 50px;
+}
+
+.web{
+  height: 50px;
+  width: 50px;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+a:hover{
+  filter: contrast(50%);
+  -webkit-filter: contrast(50%);
+}
+
+.link{
+color: white;
+}
+
+.inline-block{
+   display: inline-block;
+   margin-top: -1px;
+}
+
+.icon:hover{
+  filter: contrast(50%);
+  -webkit-filter: contrast(50%);
+}
+
+/*landing page*/
+
+.preload{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: #151922;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  transition: opacity 0.5s ease;
+  margin-top: 50px;
+}
+
+.airplane{
+  height: 200px;
+  animation: airplane 1s ease-in-out infinite alternate;
+}
+
+.preload h3{
+  position: absolute;
+  top: 60%;
+  transform: translateY(-75%);
+  color: white;
+  font-size: 30px;
+  font-family: 'Jost', sans-serif;
+  font-weight: 400;
+  padding-top: -100px;
+}
+
+.preload-finish{
+  opacity: 0;
+  pointer-events: none;
+}
+
+@keyframes airplane{
+  from{
+    transform: translateY(0px);
+  }
+  to{
+    transform: translateY(50px);
+  }
+}
+</style>
 </head>
 
 <body>
@@ -26,24 +198,24 @@
 	</div>
 	</section>
 
-<header>
-	<!-- PS Logo -->
-		<p>
-			<a href="https://reserveps.com/" target="_blank">
-				<img src="img/ps-logo-blue.jpeg" alt="https://reserveps.com/" width="100" height="132">
+<header id="header">
+	<!-- Erjana's Headshot -->
+		<p class="banner">
+			<a class="erjana" href="mailto:erjanaradomi@reserveps.com">
+				<img src="img/era.jpg" alt="headshot" width="100" height="132">
 			</a>
 		</p>
 
-	<!-- Erjana's Headshot 
-		<p>
-			<a href="mailto:erjanaradomi@reserveps.com">
-				<img src="#" alt="email" width="100" height="132">
+	<!-- PS Logo -->
+		<p class="banner">
+			<a href="https://reserveps.com/" target="_blank">
+				<img src="img/ps-logo-blue.jpeg" alt="https://reserveps.com/" width="150" height="164">
 			</a>
 		</p>
-	-->
+	
 </header>
 
-	
+<div id="body">
 	<section>
 		<h1>Erjana Radomi</h1>
 		<p class="title">Director of Human Resources</p>
@@ -82,6 +254,7 @@
 			</a>
 		</p>
 	</section>
+</div>
 
 <script src="./app.js"></script>
 </body>
