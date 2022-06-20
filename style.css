@@ -20,9 +20,28 @@ div{
   cursor:pointer;
 }
 
+ /* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+} 
+/*
 .banner{
   display: inline-block;
 }
+
+.images{
+  display: inline-block;
+}
+*/
 
 /*Dots
 .loading span{
@@ -168,7 +187,7 @@ color: white;
   }
 }
 
-/* Normal desktop :1200px. */
+* Normal desktop :1200px. */
 @media (min-width: 1200px) and (max-width: 1500px) {
 
 /*     put your css */
